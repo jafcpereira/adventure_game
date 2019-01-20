@@ -89,6 +89,10 @@ def first_floor(inventory):
                         "and you landed in the lava. "
                         "Ouch, this probably hurt a lot!")
                     game_over()
+        else:
+            print_pause("You turn back towards the stairs.")
+            walk_stairs(inventory)
+
 
 
 def second_floor(inventory):
@@ -190,6 +194,9 @@ def third_floor(inventory):
                         "You are condemned to an eternity in the castle "
                         "as a slave to the cats.")
                     game_over()
+        else:
+            print_pause("You turn back towards the stairs.")
+            walk_stairs(inventory)
 
 
 def fourth_floor(inventory):
