@@ -65,7 +65,7 @@ def first_floor(inventory):
             print_pause("You try to jump to the central platform.")
             if 'flyingboots' in inventory:
                 print_pause(
-                    "Luckily you already go the flying boots. "
+                    "Luckily you already got the flying boots. "
                     "This will be easy.")
                 print_pause(
                     "You managed to land in the central platform "
@@ -92,7 +92,6 @@ def first_floor(inventory):
         else:
             print_pause("You turn back towards the stairs.")
             walk_stairs(inventory)
-
 
 
 def second_floor(inventory):
